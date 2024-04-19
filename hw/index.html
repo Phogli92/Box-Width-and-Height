@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin-top: 250px;
+        }
+        .box-2{
+            width: 800px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 243, 228);
+            position: fixed;
+            top: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 10px rgb(255, 243, 228);
+        }
+        .box-color{
+            border: none;
+            box-shadow: 0 0  5px 10px rgb(234, 255, 0);
+            border-radius: 5px;
+            margin-left: 20px;
+            background: rgb(234, 255, 0) ;
+        }
+        .by{
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box-2">
+        <input type="range" class="box-width" >
+        <input type="range" class="box-border" max="50">
+        <input type="color" class="box-color">
+    </div>
+    <script src="./main.js"></script>
+    <p class="by">by:Mr.Shodiyorbek</p>
+</body>
+</html>
